@@ -11,7 +11,7 @@ class JointAttentionData:
         return str(self.__dict__)
 
 
-class PupilData:
+class PupilEyeData:
 
     def __init__(self, glass_id, timestamp, eye_id, norm_pos, confidence):
         self.glass_id = glass_id
@@ -22,4 +22,17 @@ class PupilData:
 
     def __repr__(self):
         return str(self.__dict__)
+
+
+class PupilWorldData:
+
+    def __init__(self, glass_id, timestamp, index, frame):
+        self.glass_id = glass_id
+        self.index = index
+        self.frame = frame
+        self.timestamp = timestamp
+
+    def __repr__(self):
+        return str(self.__dict__)
+
 
