@@ -2,7 +2,7 @@ import numpy as np
 from numpy.linalg import inv
 import filterpy.kalman
 
-from files.logger import logger
+from logger import logger
 
 
 class OnlineKalman:
